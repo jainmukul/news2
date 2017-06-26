@@ -2,7 +2,7 @@ $(document).ready(function() {
   $(".btn-primary").addClass("hide");
   // var weather = "http://api.apixu.com/v1/forecast.json?key=90da794fb2ae411bb7914107172106&q=07112&days=7";
   // $(".weather").append(weather);
-  var breakingNews = "https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d";
+   var breakingNews = "https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=7d0ae5aa0b5d49ff9a0470e03d42275d";
   $.getJSON(breakingNews, function(data) {
     var story1ImgUrl = data.articles[0].url;
     var story1Img = "<section class='story-img col-md-6'>" + "<section class='story-title'>" + data.articles[0].title + "</section>" + "<a href='" + data.articles[0].url + "' target='_blank'>" + "<img src='" + data.articles[0].urlToImage + "' class='story'></a>" + "<section class='description'>" + data.articles[0].description + "</section>" + "</section>" + "<hr />";
@@ -24,7 +24,7 @@ $(document).ready(function() {
     $(".latest").append(story4Img);
     data.articles.forEach(function(ele) {
       // Top section of page for breaking news
-    var breakingNewsLink = "<section class='breaking-news animated slideOutLef infinite'>BREAKING NEWS: " +  ele.title + "</section>";
+    var breakingNewsLink = "<a class='breaking-news animated slideOutLef infinite'>BREAKING NEWS: " +  ele.title + "</a>";
     $(".feed").append(breakingNewsLink);
   });
   });

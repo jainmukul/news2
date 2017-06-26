@@ -14,7 +14,7 @@ fonts for description = Josefin Sans*/
 .feed {
   width: 100%;
   display: -webkit-inline-box;
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   background: #888383;
   border-bottom: 2px solid #000;
@@ -48,11 +48,6 @@ span {
   color: #fff;
   font-size: 32px;
   font-family: 'Merriweather', serif;
-}
-
-.col-xs-12 {
-    width: 100%;
-    top: 60px;
 }
 
 .jumbotron {
