@@ -1,0 +1,64 @@
+/*fonts for Header = Merriweather
+fonts for description = Josefin Sans*/
+
+
+* {
+  box-sizing: border-box;
+}
+.hide {
+  display: none;
+}
+.story {
+  width: 100%;
+}
+.feed {
+  width: 100%;
+  display: -webkit-inline-box;
+  position: absolute;
+  top: 0;
+  background: #888383;
+  border-bottom: 2px solid #000;
+  height: 20px;
+  color: blue;
+  font-size: 1rem;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-top: 1px;
+}
+.navbar {
+    background: #f53d3d;
+}
+.navbar-p {
+    color: white;
+    line-height: 1;
+    margin: 5px 8px;
+}
+.navbar-fixed-top {
+  top: 20px;
+}
+.navbar-brand {
+  /*color: #fff;*/
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 14px;
+    line-height: 18px;
+}
+span {
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Merriweather', serif;
+}
+
+.col-xs-12 {
+    width: 100%;
+    top: 60px;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+    color: inherit;
+    background-color: #ececec;
+}
